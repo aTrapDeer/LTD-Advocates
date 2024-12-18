@@ -18,7 +18,7 @@ export default function CalendlyEmbed() {
   return (
     <div 
       className="calendly-inline-widget" 
-      data-url="https://calendly.com/d/cqs3-7v8-gb7?hide_gdpr_banner=1"
+      data-url="https://calendly.com/disabilityclaimadvocatesmailer/30min"
       style={{ minWidth: '320px', height: '700px' }}
     />
   )
