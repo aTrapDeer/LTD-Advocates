@@ -42,7 +42,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-medium">Phone</h3>
-                        <p className="text-gray-600">(555) 123-4567</p>
+                        <p className="text-gray-600">(619) 786-7262</p>
                       </div>
                     </div>
 
@@ -54,7 +54,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-medium">Email</h3>
-                        <p className="text-gray-600">info@disabilityclaims.com</p>
+                        <p className="text-gray-600">disabilityclaimadvocatesmailer@gmail.com</p>
                       </div>
                     </div>
 
