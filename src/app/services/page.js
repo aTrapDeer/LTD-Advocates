@@ -68,7 +68,7 @@ export default function Services() {
                   <div className="flex items-center bg-blue-50 p-4 rounded-lg">
                     <DollarSign className="w-8 h-8 text-primary mr-4" />
                     <div>
-                      <span className="font-semibold block">$200 Initial Fee</span>
+                      <span className="font-semibold block">$500 Initial Fee</span>
                       <span className="text-sm text-gray-600">Affordable starting point</span>
                     </div>
                   </div>
