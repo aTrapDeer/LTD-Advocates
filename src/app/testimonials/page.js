@@ -6,21 +6,21 @@ export default function Testimonials() {
     {
       name: "Sarah T.",
       type: "SSDI Appeal Success",
-      content: "After being denied SSDI twice, this team helped me appeal successfully. Their step-by-step guidance made all the difference. I now receive monthly benefits of $1,400, which has been life-changing for my family.",
+      content: "After being denied by my insurance provider twice, LTD Advocates helped me appeal successfully. Their step-by-step guidance made all the difference. My monthly benifits help me cover my medical expenses and basic living expenses, which has been life-changing for me and my family.",
       rating: 5,
       date: "March 2024"
     },
     {
       name: "Michael R.",
       type: "Long Term Disability Claim",
-      content: "When my employer's insurance company made my LTD claim difficult, this team was invaluable. They helped me understand my policy details and gathered the right medical documentation. Within 3 months, my claim was approved. Their $200 initial fee and reasonable hourly rate saved me thousands compared to other firms.",
+      content: "When my employer's insurance company made my LTD claim difficult, this team was invaluable. They helped me understand my policy details and gathered the right medical documentation. Within 3 months, my claim was approved. I could not afford the high retainer fee of other consultants. The fact that they gave me the option to pay on approval made all the difference.",
       rating: 5,
       date: "February 2024"
     },
     {
       name: "Jennifer L.",
       type: "SSDI Consultation",
-      content: "The regular updates and clear communication made a huge difference. They verified my work history and helped gather medical evidence that proved crucial for my case. Their hourly rate was so reasonable compared to the $6,000 retainer other firms wanted.",
+      content: "The regular updates and clear communication made a huge difference. They helped gather medical evidence that proved crucial for my case and managed the timelines with my claims specialist so I could focus on my health.",
       rating: 5,
       date: "January 2024"
     },
