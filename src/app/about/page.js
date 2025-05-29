@@ -103,7 +103,7 @@ export default function About() {
               },
               {
                 title: 'Core Values',
-                content: 'Empathy: We approach every client with understanding and compassion. Integrity: Transparency and honesty are the cornerstones of our practice. Expertise: We bring deep knowledge and strategic insight to every case.',
+                content: 'Our core values are Empathy, Integrity and Expertise. We approach every client with understanding and compassion. Transparency and honesty are the cornerstones of our practice. We bring deep knowledge and strategic insight to every case.',
                 icon: Users
               }
             ].map((item, index) => (
