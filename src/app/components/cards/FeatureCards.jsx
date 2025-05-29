@@ -7,12 +7,12 @@ export default function FeatureCards() {
       {
         title: "Compassionate Expertise",
         icon: "🤝",
-        description: "Led by Ryan Beckmann, a seasoned consultant with firsthand experience navigating LTD claims, our team is uniquely positioned to understand your challenges. Ryan's journey as a claimant and an advocate ensures that our services are informed by real-world experience and a genuine commitment to helping others."
+        description: "With firsthand experience our team is uniquely positioned to understand your challenges. Our founder's background ensures that our services are informed by real-world experience and a genuine commitment to helping others."
       },
       {
         title: "Affordable and Transparent Services",
         icon: "💰",
-        description: "Unlike other consultants who charge exorbitant fees, our services are designed to be accessible and budget-friendly. Securing the benefits you&apos;re entitled to should come with a manageable cost."
+        description: "Unlike other consultants who charge exorbitant fees, our services are designed to be accessible and budget-friendly. Securing the benefits you are entitled to should come with a manageable cost."
       },
       {
         title: "Specialized Focus on LTD Claims",
@@ -22,7 +22,7 @@ export default function FeatureCards() {
       {
         title: "Comprehensive Support",
         icon: "🛡️",
-        description: "We provide step-by-step guidance from the initial consultation to claim approval (and beyond). Whether you&apos;re filing a new claim or dealing with the complexities of an appeal, our team ensures that you are equipped with the tools, knowledge, and support needed to achieve your goals."
+        description: "We provide step-by-step guidance from the initial consultation to claim approval and beyond. Whether you are filing a new claim or dealing with the complexities of an appeal, our team ensures that you are equipped with the tools, knowledge, and support needed to achieve your goals."
       }
     ];
   
