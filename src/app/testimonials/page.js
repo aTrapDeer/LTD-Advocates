@@ -27,7 +27,7 @@ export default function Testimonials() {
     {
       name: "David M.",
       type: "Appeals Support",
-      content: "When my initial claim was denied, I was devastated. Their team reviewed my case, identified the gaps, and helped prepare a compelling appeal. Their expertise in administrative hearings was invaluable.",
+      content: "When my initial claim was denied, I was devastated. Their team reviewed my case, identified the missing elements, and helped prepare a compelling appeal. Their expertise in juggling administrative beuracracy was invaluable.",
       rating: 5,
       date: "December 2023"
     }
