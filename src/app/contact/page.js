@@ -76,15 +76,7 @@ export default function ContactPage() {
                           <MapPin className="w-6 h-6" />
                         </div>
                       </div>
-        <!--
-                      <div>
-                        <h3 className="font-medium">Office Location</h3>
-                        <p className="text-gray-600">
-                          855 Sunset Ave<br />                    
-                          Los Angeles, California 90291
-                        </p>
-                      </div>
-        -->
+
                     </div>
                   </div>
                 </div>
