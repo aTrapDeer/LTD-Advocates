@@ -75,7 +75,7 @@ export default function Services() {
                   <div className="flex items-center bg-blue-50 p-4 rounded-lg">
                     <Clock className="w-8 h-8 text-primary mr-4" />
                     <div>
-                      <span className="font-semibold block">24-7 Support</span>
+                      <span className="font-semibold block">24/7 Support</span>
                       <span className="text-sm text-gray-600">Flexible ongoing assistance</span>
                     </div>
                   </div>
