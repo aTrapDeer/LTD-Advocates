@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 
-export default function DocumentUpload({ calendlyEmail, onUploadSuccess }) {
+export default function DocumentUpload({ calendlyEmail = "", onUploadSuccess }) {
   const [files, setFiles] = useState([])
   const [isUploading, setIsUploading] = useState(false)
   const [uploadStatus, setUploadStatus] = useState('')
@@ -67,7 +67,11 @@ export default function DocumentUpload({ calendlyEmail, onUploadSuccess }) {
       console.log('Upload response:', data)
       setUploadStatus('Files uploaded successfully!')
       setFiles([])
-      onUploadSuccess()
+      
+      // Call onUploadSuccess if provided
+      if (onUploadSuccess) {
+        onUploadSuccess()
+      }
     } catch (error) {
       console.error('Upload error:', error)
       setUploadStatus(`Upload failed: ${error.message}`)

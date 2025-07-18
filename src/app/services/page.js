@@ -43,95 +43,70 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* Our Client-First Approach Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-semibold text-center mb-4">Transparent, Affordable Pricing</h2>
-          <p className="text-lg text-center text-gray-600 mb-12">Compare our client-focused approach with traditional consulting services</p>
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Our Pricing */}
-            <div className="card bg-white shadow-2xl border-2 border-primary transform hover:scale-105 transition-transform duration-300">
+          <h2 className="text-3xl font-semibold text-center mb-4">Our Client-First Approach</h2>
+          <p className="text-lg text-center text-gray-600 mb-12">Affordable, transparent, and personalized service designed around your needs</p>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="card bg-white shadow-2xl border-2 border-primary">
               <div className="card-body">
-                <div className="bg-primary text-white py-2 px-4 rounded-lg inline-block mx-auto mb-4">
-                  <span className="text-sm font-semibold">RECOMMENDED</span>
-                </div>
-                <h3 className="text-2xl font-bold text-center mb-2">Our Client-First Approach</h3>
-                <p className="text-center text-gray-600 mb-6">Affordable, transparent, and personalized service</p>
-                <div className="space-y-6">
-                  <div className="flex items-center bg-blue-50 p-4 rounded-lg">
-                    <CheckCircle className="w-8 h-8 text-primary mr-4" />
-                    <div>
-                      <span className="font-semibold block">Free Initial Screening</span>
-                      <span className="text-sm text-gray-600">No obligation consultation</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center bg-blue-50 p-4 rounded-lg">
-                    <DollarSign className="w-8 h-8 text-primary mr-4" />
-                    <div>
-                      <span className="font-semibold block">No Retainer Fee</span>
-                      <span className="text-sm text-gray-600">Affordable starting point</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center bg-blue-50 p-4 rounded-lg">
-                    <Clock className="w-8 h-8 text-primary mr-4" />
-                    <div>
-                      <span className="font-semibold block">24/7 Support</span>
-                      <span className="text-sm text-gray-600">Flexible ongoing assistance</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center bg-blue-50 p-4 rounded-lg">
-                    <Shield className="w-8 h-8 text-primary mr-4" />
-                    <div>
-                      <span className="font-semibold block">Regular Updates</span>
-                      <span className="text-sm text-gray-600">Clear communication throughout</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="card-actions">
-                  <Link 
-                    href="/booking" 
-                    className="btn btn-primary w-full mt-8 hover:scale-105 transition-transform duration-200"
-                  >
-                    Get Started Today
-                  </Link>
-                </div>
-              </div>
-            </div>
+                <div className="text-center mb-8">
 
-            {/* Competitor Pricing */}
-            <div className="card bg-gray-100 shadow-xl opacity-75 hover:opacity-100 transition-opacity duration-300">
-              <div className="card-body">
-                <h3 className="text-2xl font-bold text-center mb-2 text-gray-700">Traditional Consultants</h3>
-                <p className="text-center text-gray-500 mb-6">Standard industry pricing model</p>
-                <div className="space-y-6">
-                  <div className="flex items-center p-4 bg-gray-200 rounded-lg">
-                    <DollarSign className="w-8 h-8 text-gray-500 mr-4" />
+                  <h3 className="text-3xl font-bold mb-2">Fair & Transparent Pricing</h3>
+                  <p className="text-gray-600 text-lg">We believe everyone deserves quality representation without financial barriers</p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="flex items-center bg-blue-50 p-6 rounded-lg">
+                    <CheckCircle className="w-10 h-10 text-primary mr-4 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold block text-gray-700">$6,000 Retainer Fee</span>
-                      <span className="text-sm text-gray-500">High upfront cost</span>
+                      <span className="font-semibold block text-lg">Free Initial Screening</span>
+                      <span className="text-gray-600">No obligation consultation to assess your case</span>
                     </div>
                   </div>
-                  <div className="flex items-center p-4 bg-gray-200 rounded-lg">
-                    <Clock className="w-8 h-8 text-gray-500 mr-4" />
+                  <div className="flex items-center bg-blue-50 p-6 rounded-lg">
+                    <DollarSign className="w-10 h-10 text-primary mr-4 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold block text-gray-700">$500/hour Rate</span>
-                      <span className="text-sm text-gray-500">Expensive ongoing costs</span>
+                      <span className="font-semibold block text-lg">No Retainer Fee</span>
+                      <span className="text-gray-600">Start your case without upfront costs</span>
                     </div>
                   </div>
-                  <div className="flex items-center p-4 bg-gray-200 rounded-lg">
-                    <AlertCircle className="w-8 h-8 text-gray-500 mr-4" />
+                  <div className="flex items-center bg-blue-50 p-6 rounded-lg">
+                    <Clock className="w-10 h-10 text-primary mr-4 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold block text-gray-700">Limited Updates</span>
-                      <span className="text-sm text-gray-500">Minimal communication</span>
+                      <span className="font-semibold block text-lg">24/7 Support</span>
+                      <span className="text-gray-600">Flexible assistance when you need it</span>
                     </div>
                   </div>
-                  <div className="flex items-center p-4 bg-gray-200 rounded-lg">
-                    <Clock className="w-8 h-8 text-gray-500 mr-4" />
+                  <div className="flex items-center bg-blue-50 p-6 rounded-lg">
+                    <Shield className="w-10 h-10 text-primary mr-4 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold block text-gray-700">Multi Year Timelines</span>
-                      <span className="text-sm text-gray-500">Extended processing times</span>
+                      <span className="font-semibold block text-lg">Regular Updates</span>
+                      <span className="text-gray-600">Clear communication throughout your case</span>
                     </div>
                   </div>
+                </div>
+                
+                <div className="text-center space-y-4">
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Link 
+                      href="/booking" 
+                      className="btn btn-primary btn-lg hover:scale-105 transition-transform duration-200"
+                    >
+                      Get Started Today
+                    </Link>
+                    <Link 
+                      href="/compare-price" 
+                      className="btn btn-outline btn-primary btn-lg hover:scale-105 transition-transform duration-200"
+                    >
+                      Compare Our Pricing
+                    </Link>
+                  </div>
+                  <p className="text-sm text-gray-600 mt-4">
+                    Want to see how we compare to traditional consultants? <Link href="/compare-price" className="text-primary hover:underline">View detailed pricing comparison</Link>
+                  </p>
                 </div>
               </div>
             </div>

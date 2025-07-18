@@ -20,7 +20,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" />
-                disabilityclaimadvocatesmailer@gmail.com
+                contact@ltdadvocates.com
               </li>
               <li className="flex items-center">
                 <Clock className="w-5 h-5 mr-2" />

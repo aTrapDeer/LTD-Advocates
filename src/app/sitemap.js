@@ -4,7 +4,6 @@ export default function sitemap() {
   const routes = [
     '',
     '/services',
-    '/testimonials',
     '/about',
     '/contact',
     '/booking',

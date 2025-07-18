@@ -13,17 +13,16 @@ export default function BookingAlert({ calendlyEmail, hasUploadedFiles }) {
       <div className="p-6">
         <div className="flex items-start space-x-4">
           <div className="flex-shrink-0">
-            {!hasUploadedFiles && calendlyEmail && (
-              <div className="p-2 bg-yellow-50 rounded-full">
-                <svg className="h-6 w-6 text-yellow-400 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                </svg>
-              </div>
-            )}
-            {hasUploadedFiles && (
+            {calendlyEmail ? (
               <div className="p-2 bg-green-50 rounded-full">
                 <svg className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+            ) : (
+              <div className="p-2 bg-blue-50 rounded-full">
+                <svg className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
             )}
@@ -31,37 +30,34 @@ export default function BookingAlert({ calendlyEmail, hasUploadedFiles }) {
           
           <div className="flex-1 min-w-0">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Booking Progress
+              {calendlyEmail ? 'Consultation Scheduled!' : 'Schedule Your Consultation'}
             </h3>
-            <ul className="space-y-3">
-              <li className={`flex items-center ${
-                calendlyEmail ? 'text-green-600' : 'text-gray-500'
-              }`}>
-                <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full border-2 mr-3 
-                  ${calendlyEmail ? 'border-green-500 bg-green-50' : 'border-gray-300'}">
-                  {calendlyEmail ? '✓' : '1'}
-                </span>
-                <span className={calendlyEmail ? 'line-through' : ''}>
-                  Schedule Consultation
-                </span>
-              </li>
-              <li className={`flex items-center ${
-                hasUploadedFiles ? 'text-green-600' : 
-                calendlyEmail ? 'text-yellow-600' : 'text-gray-500'
-              }`}>
-                <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full border-2 mr-3
-                  ${hasUploadedFiles ? 'border-green-500 bg-green-50' : 
-                    calendlyEmail ? 'border-yellow-500 bg-yellow-50' : 'border-gray-300'}">
-                  {hasUploadedFiles ? '✓' : '2'}
-                </span>
-                Upload Documents
-                {!hasUploadedFiles && calendlyEmail && (
-                  <span className="ml-2 text-yellow-500 text-xs font-medium bg-yellow-50 px-2 py-0.5 rounded-full animate-pulse">
-                    Required
-                  </span>
-                )}
-              </li>
-            </ul>
+            
+            {calendlyEmail ? (
+              <div className="space-y-3">
+                <p className="text-sm text-gray-600 mb-4">
+                  Your consultation has been scheduled successfully. You can now upload any relevant documents if you have them.
+                </p>
+                <div className="flex gap-2">
+                  <a 
+                    href="/docs-upload"
+                    className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  >
+                    Upload Documents
+                  </a>
+                  <a 
+                    href="/contact"
+                    className="inline-flex items-center px-3 py-1.5 border border-gray-300 text-xs font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            ) : (
+              <p className="text-sm text-gray-600">
+                Select a time that works best for you to schedule your consultation.
+              </p>
+            )}
           </div>
 
           <div className="flex-shrink-0">
@@ -76,14 +72,6 @@ export default function BookingAlert({ calendlyEmail, hasUploadedFiles }) {
             </button>
           </div>
         </div>
-
-        {hasUploadedFiles && (
-          <div className="mt-4 bg-green-50 rounded-lg p-3">
-            <p className="text-sm text-green-700">
-              ✨ All set! We&apos;ll see you at your scheduled consultation.
-            </p>
-          </div>
-        )}
       </div>
     </div>
   )

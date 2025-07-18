@@ -21,7 +21,6 @@ export default function Header() {
   const navItems = [
     { label: 'Home', path: '/' },
     { label: 'Services', path: '/services' },
-    { label: 'Testimonials', path: '/testimonials' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ]
