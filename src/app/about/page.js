@@ -9,7 +9,7 @@ function FAQItem({ question, answer, isOpen, onClick }) {
   return (
     <div className="border-b border-gray-200 last:border-0">
       <button
-        className="w-full py-6 flex justify-between items-center text-left"
+        className="w-full py-8 px-6 flex justify-between items-center text-left"
         onClick={onClick}
       >
         <h3 className="text-lg font-semibold pr-8">{question}</h3>
@@ -21,10 +21,10 @@ function FAQItem({ question, answer, isOpen, onClick }) {
       </button>
       <div 
         className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-96 pb-6' : 'max-h-0'
+          isOpen ? 'max-h-96 pb-8' : 'max-h-0'
         }`}
       >
-        <p className="text-gray-600">{answer}</p>
+        <p className="text-gray-600 px-6">{answer}</p>
       </div>
     </div>
   );
