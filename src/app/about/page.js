@@ -59,7 +59,7 @@ export default function About() {
       {/* Founder Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative group">
               <div className="relative h-[600px] w-full overflow-hidden rounded-lg shadow-xl">
                 <Image 
@@ -73,7 +73,9 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
-            <div>
+
+          </div> */}
+                      <div>
               <h2 className="text-3xl font-semibold mb-6">{about.founder.title}</h2>
               {about.founder.content.map((paragraph, index) => (
                 <p key={index} className="text-lg mb-6">
@@ -81,7 +83,6 @@ export default function About() {
                 </p>
               ))}
             </div>
-          </div>
         </div>
       </section>
 
