@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { trackContactFormSubmission } from '../../utils/analytics'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -40,6 +41,9 @@ export default function ContactForm() {
       const result = await response.json()
 
       if (response.ok) {
+        // Track successful form submission
+        trackContactFormSubmission(formData);
+        
         setSubmitStatus({
           type: 'success',
           message: result.message || 'Your message has been sent successfully!'

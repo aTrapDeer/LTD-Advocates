@@ -2,6 +2,7 @@
 import ContactForm from '../components/contact/ContactForm'
 import { Phone, Mail, Clock } from 'lucide-react'
 import { PHONE_NUMBER, PHONE_NUMBER_TEL } from '../constants'
+import { trackPhoneClick, trackBookingClick } from '../utils/analytics'
 
 export default function ContactPage() {
   return (
@@ -77,10 +78,14 @@ export default function ContactPage() {
                 <div className="card-body">
                   <h3 className="card-title text-xl mb-4">Quick Actions</h3>
                   <div className="space-y-3">
-                    <a href="/booking" className="btn btn-outline btn-sm w-full text-white border-white hover:bg-white hover:text-primary">
+                    <a href="/booking" 
+                       onClick={() => trackBookingClick('contact_page_sidebar')}
+                       className="btn btn-outline btn-sm w-full text-white border-white hover:bg-white hover:text-primary">
                       Schedule Consultation
                     </a>
-                    <a href={`tel:${PHONE_NUMBER_TEL}`} className="btn btn-outline btn-sm w-full text-white border-white hover:bg-white hover:text-primary">
+                    <a href={`tel:${PHONE_NUMBER_TEL}`}
+                       onClick={() => trackPhoneClick('contact_page_sidebar')}
+                       className="btn btn-outline btn-sm w-full text-white border-white hover:bg-white hover:text-primary">
                       Call Now
                     </a>
                   </div>

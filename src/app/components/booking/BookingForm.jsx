@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import CalendlyEmbed from './CalendlyEmbed'
 import BookingAlert from './BookingAlert'
 import BookingNotice from './BookingNotice'
+import { trackCalendlyBooking } from '../../utils/analytics'
 
 const BookingForm = () => {
   const [calendlyEmail, setCalendlyEmail] = useState('')
@@ -11,6 +12,12 @@ const BookingForm = () => {
     if (e.data.event === 'calendly.event_scheduled') {
       const { email } = e.data.payload.invitee
       setCalendlyEmail(email)
+      
+      // Track the booking completion
+      trackCalendlyBooking({
+        user_email: email.replace(/@.*$/, '@***'), // Privacy-safe email
+        event_type: e.data.payload.event.name || 'consultation'
+      })
     }
   }
 

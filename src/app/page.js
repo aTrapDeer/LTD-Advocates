@@ -4,6 +4,7 @@ import Link from 'next/link'
 import FeatureCards from './components/cards/FeatureCards';
 import Image from 'next/image'
 import siteContent from './content/siteContent.json'
+import { trackBookingClick } from './utils/analytics'
 
 export default function Home() {
   const { home } = siteContent;
@@ -40,7 +41,8 @@ export default function Home() {
                 {home.hero.buttons.services}
               </Link>
               <Link 
-                href="/booking" 
+                href="/booking"
+                onClick={() => trackBookingClick('home_hero')}
                 className="btn btn-outline text-white hover:bg-white hover:text-primary"
               >
                 {home.hero.buttons.booking}
@@ -107,7 +109,8 @@ export default function Home() {
               </div>
 
               <Link 
-                href="/booking" 
+                href="/booking"
+                onClick={() => trackBookingClick('home_consultation_section')}
                 className="btn btn-primary inline-flex items-center gap-2"
               >
                 {home.consultation.ctaButton}
@@ -134,7 +137,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-semibold mb-8">{home.callToAction.title}</h2>
           <Link 
-            href="/booking" 
+            href="/booking"
+            onClick={() => trackBookingClick('home_cta_section')}
             className="btn btn-primary btn-lg"
           >
             {home.callToAction.buttonText}

@@ -1,7 +1,8 @@
 'use client'
 import Link from 'next/link'
 import { Phone, Mail, Clock } from 'lucide-react'
-import { PHONE_NUMBER } from '../../constants'
+import { PHONE_NUMBER, PHONE_NUMBER_TEL } from '../../constants'
+import { trackPhoneClick } from '../../utils/analytics'
 
 export default function Footer() {
   return (
@@ -17,7 +18,11 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" />
-                {PHONE_NUMBER}
+                <a href={`tel:${PHONE_NUMBER_TEL}`}
+                   onClick={() => trackPhoneClick('footer')}
+                   className="hover:text-white transition-colors">
+                  {PHONE_NUMBER}
+                </a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" />

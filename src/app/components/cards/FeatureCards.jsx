@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { trackBookingClick } from '../../utils/analytics'
 
 export default function FeatureCards() {
     const features = [
@@ -91,7 +92,7 @@ export default function FeatureCards() {
             transition={{ delay: 0.8 }}
             className="text-center mt-12"
           >
-            <Link href="/booking">
+            <Link href="/booking" onClick={() => trackBookingClick('feature_cards')}>
               <button className="btn btn-primary btn-lg hover:scale-105 transition-transform duration-200">
                 Schedule a Free Consultation
               </button>

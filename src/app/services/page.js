@@ -3,6 +3,7 @@ import { CheckCircle, DollarSign, Clock, Shield, AlertCircle } from 'lucide-reac
 import Link from 'next/link'
 import Image from 'next/image'
 import siteContent from '../content/siteContent.json'
+import { trackBookingClick } from '../utils/analytics'
 
 export default function Services() {
   const { services } = siteContent;
@@ -92,7 +93,8 @@ export default function Services() {
                 <div className="text-center space-y-4">
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link 
-                      href="/booking" 
+                      href="/booking"
+                      onClick={() => trackBookingClick('services_get_started')}
                       className="btn btn-primary btn-lg hover:scale-105 transition-transform duration-200"
                     >
                       Get Started Today
@@ -138,7 +140,8 @@ export default function Services() {
                 </div>
               </div>
               <Link 
-                href="/booking" 
+                href="/booking"
+                onClick={() => trackBookingClick('services_free_consultation')}
                 className="btn btn-primary btn-lg inline-flex items-center gap-2 mt-4"
               >
                 Schedule Your Free Consultation
