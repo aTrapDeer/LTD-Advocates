@@ -4,6 +4,11 @@ import { useState, useEffect } from 'react'
 export default function BookingAlert({ calendlyEmail, hasUploadedFiles }) {
   const [isVisible, setIsVisible] = useState(true)
 
+  // Hide the alert if booking is completed since we're handling everything internally
+  if (calendlyEmail) {
+    return null
+  }
+
   return (
     <div 
       className={`fixed bottom-6 right-6 max-w-md bg-white shadow-2xl rounded-xl pointer-events-auto ring-1 ring-black/5 transform transition-all duration-500 ease-in-out ${
@@ -13,51 +18,21 @@ export default function BookingAlert({ calendlyEmail, hasUploadedFiles }) {
       <div className="p-6">
         <div className="flex items-start space-x-4">
           <div className="flex-shrink-0">
-            {calendlyEmail ? (
-              <div className="p-2 bg-green-50 rounded-full">
-                <svg className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-            ) : (
-              <div className="p-2 bg-blue-50 rounded-full">
-                <svg className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-            )}
+            <div className="p-2 bg-blue-50 rounded-full">
+              <svg className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
           </div>
           
           <div className="flex-1 min-w-0">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              {calendlyEmail ? 'Consultation Scheduled!' : 'Schedule Your Consultation'}
+              Schedule Your Consultation
             </h3>
             
-            {calendlyEmail ? (
-              <div className="space-y-3">
-                <p className="text-sm text-gray-600 mb-4">
-                  Your consultation has been scheduled successfully. You can now upload any relevant documents if you have them.
-                </p>
-                <div className="flex gap-2">
-                  <a 
-                    href="/docs-upload"
-                    className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                  >
-                    Upload Documents
-                  </a>
-                  <a 
-                    href="/contact"
-                    className="inline-flex items-center px-3 py-1.5 border border-gray-300 text-xs font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                  >
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-            ) : (
-              <p className="text-sm text-gray-600">
-                Select a time that works best for you to schedule your consultation.
-              </p>
-            )}
+            <p className="text-sm text-gray-600">
+              Select a time that works best for you to schedule your consultation.
+            </p>
           </div>
 
           <div className="flex-shrink-0">
