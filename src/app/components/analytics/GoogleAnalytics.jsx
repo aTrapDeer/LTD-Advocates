@@ -7,7 +7,7 @@ import { useEffect, Suspense } from 'react';
 function GoogleAnalyticsInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const GA_MEASUREMENT_ID = 'G-T8HHGDLKSC';
+  const GA_MEASUREMENT_ID = 'G-Y1LLRK59BP';
   const GOOGLE_ADS_ID = 'AW-17379527412';
 
   useEffect(() => {
