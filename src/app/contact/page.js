@@ -29,7 +29,7 @@ export default function ContactPage() {
                   <Phone className="w-5 h-5 text-white" />
                   <div className="text-left">
                     <p className="text-sm text-white/80">Call Us</p>
-                    <p className="font-semibold text-white">(619) 786-7262</p>
+                    <p className="font-semibold text-white">(314) 640-8720</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
@@ -79,7 +79,7 @@ export default function ContactPage() {
                     <a href="/booking" className="btn btn-outline btn-sm w-full text-white border-white hover:bg-white hover:text-primary">
                       Schedule Consultation
                     </a>
-                    <a href="tel:(619) 786-7262" className="btn btn-outline btn-sm w-full text-white border-white hover:bg-white hover:text-primary">
+                    <a href="tel:(314) 640-8720" className="btn btn-outline btn-sm w-full text-white border-white hover:bg-white hover:text-primary">
                       Call Now
                     </a>
                   </div>
@@ -134,7 +134,7 @@ export default function ContactPage() {
               <div className="card-body">
                 <h3 className="font-medium text-lg mb-2">How do I schedule a consultation?</h3>
                 <p className="text-gray-600 text-sm">
-                  You can schedule a consultation by filling out our contact form, calling us at (619) 786-7262, 
+                  You can schedule a consultation by filling out our contact form, calling us at (314) 640-8720, 
                   or using our online booking system. We&apos;ll respond within 24 hours.
                 </p>
               </div>
