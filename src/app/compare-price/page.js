@@ -78,21 +78,6 @@ export default function ComparePricePage() {
         icon: <DollarSign className="w-6 h-6 text-red-500" />,
         highlight: false
       }
-    },
-    {
-      category: "Case Timeline",
-      ltdAdvocates: {
-        feature: "Efficient 3-6 Month Process",
-        description: "Streamlined approach to get results faster",
-        icon: <Clock className="w-6 h-6 text-green-500" />,
-        highlight: true
-      },
-      competitors: {
-        feature: "1-3 Year Timeline",
-        description: "Extended process with more billable hours",
-        icon: <AlertCircle className="w-6 h-6 text-red-500" />,
-        highlight: false
-      }
     }
   ]
 
@@ -106,8 +91,8 @@ export default function ComparePricePage() {
     competitors: {
       consultation: "$300-500",
       retainer: "$5,000-10,000",
-      hourlyWork: "$400-600/hour × 20-40 hours",
-      totalEstimate: "$15,000-35,000+",
+      hourlyWork: "$500/hour × 40-80+ hours",
+      totalEstimate: "$20,000-40,000+",
       notes: "Plus additional costs for documents, calls, and filing fees"
     }
   }
