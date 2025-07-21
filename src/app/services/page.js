@@ -99,12 +99,6 @@ export default function Services() {
                     >
                       Get Started Today
                     </Link>
-                    <Link 
-                      href="/compare-price" 
-                      className="btn btn-outline btn-primary btn-lg hover:scale-105 transition-transform duration-200"
-                    >
-                      Compare Our Pricing
-                    </Link>
                   </div>
                   <p className="text-sm text-gray-600 mt-4">
                     Want to see how we compare to traditional consultants? <Link href="/compare-price" className="text-primary hover:underline">View detailed pricing comparison</Link>
