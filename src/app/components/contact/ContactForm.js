@@ -104,7 +104,7 @@ export default function ContactForm() {
       </div>
       <div>
         <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
-          Email
+          Phone Number
         </label>
         <input
           type="email"
@@ -112,7 +112,7 @@ export default function ContactForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="your.email@example.com"
+          placeholder="314-640-8720"
           required
           disabled={isSubmitting}
           className="mt-1 block w-full rounded-md bg-gray-50 border-2 border-gray-300 
